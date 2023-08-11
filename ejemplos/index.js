@@ -53,3 +53,20 @@ const imprimirNombreApellido = (nombre, edad) => {
     console.log(`${nombre} ${edad} `);
 }
 imprimirNombreApellido(nombre,edad);
+
+const crearNombreApellido = (nombre, edad) => {
+    console.log("Global Scope Fake")
+    console.log(`${nombre} ${edad} `);
+    let name = nombre;
+    if(nombre.length>3){
+        let name = "nombre corto " + edad
+        console.log(name);
+    }
+}
+crearNombreApellido(nombre,edad);
+
+const botoneshw = document.getElementsByTagName('button')
+const imprimirNombreL = (Nombre,apellido) => {
+    console.log(`${Nombre} ${apellido}`)
+}
+console.log(botones)
