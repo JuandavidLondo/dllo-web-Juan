@@ -70,3 +70,13 @@ const imprimirNombreL = (Nombre,apellido) => {
     console.log(`${Nombre} ${apellido}`)
 }
 console.log(botones)
+
+// Arrys
+let estudiante = []
+estudiante.push({"nombre":"Lorenita",id:123})
+estudiante.push({"nombre":"juan",id:456})
+estudiante.forEach((estudiante)=> console.log(estudiante.nombre))
+const lorenita = estudiante.filter(x=>x.nombre == "Lorenita")
+lorenita[0].id
+const lorenita1 = estudiante.find(x=>x.nombre=="Lorenita")
+estudiantes = estudiante.map(x=>{return {...x,edad:null}})
