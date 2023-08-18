@@ -52,13 +52,49 @@
           </div>
         </div>
       </nav>
-    <div class="container">
-        <div class="element">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum, laudantium ullam aspernatur ut tempore, eveniet aperiam qui dolor harum doloribus molestiae dignissimos sit odio quo minus consequatur natus corrupti?</p>
-            <button onclick="imprimirnombreL('lorenita','cadavid')">Hello Wolrd</button>
-        </div>
 
-    </div>
+      <main>
+        <div class="container">
+        <center>
+          <h1>Formulario de tareas y actividades</h1>
+        </center>
+        <form action="javascript:void(0)" onsubmit="getDatafrom()">
+          <label for="txtName">Nombre</label>
+          <input required id="txtName" name="txtName" type="text" placeholder="Ingrese su Nombre">
+          <br>
+          <label for="txtCorreo">Correo</label>
+          <input id="txtCorreo" name="txtCorreo" type="email" placeholder="Ingrese su correo">
+          <br>
+          <label for="txtTarea">Descripcion de la tarea:</label>
+          <br>
+          <textarea name="txtTarea" id="txtTarea" cols="90" rows="5"></textarea>
+          <br>
+          <input class="form-check-input" type="checkbox" name="acceptTerms" id="acceptTerms">
+          <label class="form-check-label" for="acceptTerms">
+            <a href="http://google.com">Acepta los terminos y condiciones</a>
+          </label>
+          <br>
+          <label for="">Tipo de Tarea</label>
+          <br>
+          <input class="form-check-input" type="radio" name="radioTypeA" id="radioTypeA">
+          <label class="form-check-label" for="">Actividad</label>
+          <br>
+          <input class="form-check-input" type="radio" name="radioTypeB" id="radioTypeB">
+          <label class="form-check-label" for="">Evaluacion</label>
+          <br>
+          <label class="form-label" for="semester">Semestre</label>
+          <select name="semester" id="semester">
+            <option value="1">Semestre 1</option>
+            <option value="2">Semestre 2</option>
+            <option value="3">Semestre 3</option>
+          </select>
+          <br>
+          <br>
+          <button type="submit">Enviar</button>
+
+        </form>
+      </div>
+      </main>
     <script src="../ejemplos/index.js"></script>
 </body>
 </html>
